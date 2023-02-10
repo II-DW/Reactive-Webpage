@@ -1,38 +1,107 @@
-.App {
-  text-align: center;
+*::-webkit-scrollbar {
+    display: none; /* 크롬, 사파리, 오페라, 엣지 */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.nav_var{
+    background-color: rgb(188, 175, 206);
+    height: 10vh;
+    width: 100%;
+    display: flex;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.divlinks {
+    width: 100%;
+    height : 10vh;
+    align-items: center;
+    background-color: black;
+    display: flex;
+    text-decoration: none;    
+}
+
+.linkstyle {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    float: right;
+}
+
+.linkstyle:hover{
+    color: gray;
+    transition: .4s;
+}
+
+
+.listyle {
+    float: right;
+    
+    background-color: black;
+    list-style-type: none;
+    padding: 1vh;
+}
+
+hr{
+    border: 0;
+    width: 100%;
+    height: 0.1vh;
+    background: white;
+}
+
+.divverticallinks {
+    width: 100%;
+    height : 10.1vh;
+    z-index: 1;
+    position: fixed;
+}
+
+.logoimg1 {
+    margin-left: 2vw;
+    margin-right: 85vw;
+    padding-top: 0.5vh;
+    width: auto;
+    height: 5vh;
+}
+
+.project_box {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    background-color: white;
+    width: 10vw;
+    height: 35vh;
+    position: absolute;
+    top: 7vh;
+    left: 87.5vw;
+}
+
+.project_txt{
+    max-width: 8vw;
+    align-items: center;
+    padding-top: 2vh;
+    color: #333;
+    text-decoration: none;
+    display: flex;
+    position: relative;
+    text-align: center;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/*밑줄넣기 부분*/
+.project_txt:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #171717;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
   }
-  to {
-    transform: rotate(360deg);
-  }
+.project_txt:hover:after { 
+    width: 100%; 
+    left: 0;
 }
+
+
+

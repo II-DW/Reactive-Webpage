@@ -6,5 +6,6 @@
 
 <img src='./src/img/logo.svg'>
 
+> see Webpage in http://220.89.80.166:3000/ (Servicing)
 
 (초보의 험난한 js 체험기..) 

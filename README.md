@@ -9,7 +9,6 @@
 
 ## Main Page
 
-![1 - Clipchamp로 제작](https://user-images.githubusercontent.com/69490709/223018505-bfc41765-5a18-4f80-a4da-4250a8a5dcfc.gif)
 
 
 
